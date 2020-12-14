@@ -1,0 +1,47 @@
+/* .NavItems {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+} */
+.NavItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  /* flex-flow: column; */
+  height: 100%;
+}
+
+.NavItems a {
+  display: flex;
+  color: #40a4c8;
+}
+
+@media (min-width: 524px) {
+  .NavItems {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+}
+
+.Telephone {
+  /* border: solid 1px red; */
+  padding-top: 9px;
+  display: flex;
+  cursor: pointer;
+  color: white;
+  font-family: "Architects Daughter", cursive;
+  margin-top: 4px;
+}

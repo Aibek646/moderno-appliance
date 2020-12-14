@@ -1,0 +1,28 @@
+.ResidentialPage {
+  width: 70%;
+  margin: 50px auto;
+  font-family: "Architects Daughter", cursive;
+}
+
+.Heading h1 {
+  margin-left: 20px;
+  font-size: 70px;
+}
+
+.CardsRow {
+  display: flex;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin: 50px auto;
+}
+
+@media (max-width: 560px) {
+  .Heading h1 {
+    font-size: 30px;
+  }
+}

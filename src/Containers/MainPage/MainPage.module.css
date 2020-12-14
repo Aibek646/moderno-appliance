@@ -1,0 +1,64 @@
+.Mainpage {
+  display: flex;
+  justify-content: center;
+  font-family: "Architects Daughter", cursive;
+}
+
+.Introduction {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  /* margin: 0;
+  padding: 0; */
+}
+
+.Button {
+  display: inline-block;
+  color: #ffffff;
+  background-color: rgb(53, 66, 140);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Architects Daughter", cursive;
+}
+
+.Button:hover {
+  background: #0a116c;
+}
+
+.Button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.Button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+}
+
+.Button:hover span {
+  padding-right: 25px;
+}
+
+.Button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media (max-width: 375px) {
+  .Introduction {
+    display: flex;
+    flex-flow: column;
+  }
+}

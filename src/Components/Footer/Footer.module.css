@@ -1,0 +1,74 @@
+.Footer {
+  background: linear-gradient(
+    90deg,
+    rgb(135, 132, 157) 0%,
+    rgb(137, 136, 165) 100%
+  );
+  display: flex;
+  justify-content: center;
+  padding-bottom: 150px;
+
+  box-sizing: border-box;
+  margin-top: auto;
+  font-family: "Architects Daughter", cursive;
+}
+
+.Logo {
+  margin-top: 67px;
+  margin-left: 150px;
+  margin-right: 50px;
+}
+
+.Contact {
+  font-size: 10px;
+  margin-top: 60px;
+  /* margin-right: 400px; */
+  margin-left: 50px;
+  color: rgb(212, 212, 212);
+}
+
+.Underline {
+  margin-bottom: 25px;
+}
+
+.Underline::after {
+  content: "";
+  width: 500px;
+  height: 3px;
+  display: block;
+  background: #103850;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 630px) {
+  .Footer {
+    width: 100%;
+  }
+  .Underline::after {
+    width: 200px;
+  }
+  .Logo {
+    display: none;
+  }
+
+  .Contact {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 960px) {
+  .Contact {
+    margin-right: 150px;
+  }
+  .Underline::after {
+    width: 200px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Contact {
+    margin-right: 66px;
+    font-size: 10px;
+  }
+}
